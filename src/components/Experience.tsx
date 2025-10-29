@@ -4,52 +4,52 @@ const Experience = () => {
   const experiences = [
     {
       type: "work",
-      title: "Senior Full Stack Developer",
-      company: "Tech Innovations Inc.",
-      period: "2022 - Present",
-      description: "Leading development of enterprise applications using React, Node.js, and cloud technologies. Mentoring junior developers and driving architecture decisions.",
-      achievements: [
-        "Improved app performance by 40%",
-        "Led team of 5 developers",
-        "Implemented CI/CD pipeline",
-      ],
+      title: "Assistant System Engineer-Trainee",
+      company: "Tata Consultancy Services",
+      period: "August 2025 - Present",
+      //description: "Leading development of enterprise applications using React, Node.js, and cloud technologies. Mentoring junior developers and driving architecture decisions.",
+     // achievements: [
+      //  "Improved app performance by 40%",
+      //  "Led team of 5 developers",
+     //   "Implemented CI/CD pipeline",
+     // ],
     },
-    {
-      type: "work",
-      title: "Full Stack Developer",
-      company: "Digital Solutions Ltd.",
-      period: "2020 - 2022",
-      description: "Developed and maintained multiple client projects, focusing on responsive design and scalable backend systems.",
-      achievements: [
-        "Delivered 15+ successful projects",
-        "Reduced load time by 50%",
-        "Implemented authentication system",
-      ],
-    },
-    {
-      type: "education",
-      title: "Bachelor of Computer Science",
-      company: "University of Technology",
-      period: "2016 - 2020",
-      description: "Graduated with honors. Focused on software engineering, web development, and database management.",
-      achievements: [
-        "GPA: 3.8/4.0",
-        "President of Coding Club",
-        "Best Capstone Project Award",
-      ],
-    },
-    {
-      type: "work",
-      title: "Frontend Developer Intern",
-      company: "StartUp Ventures",
-      period: "2019 - 2020",
-      description: "Assisted in building responsive web applications and learned modern development practices.",
-      achievements: [
-        "Built 5+ landing pages",
-        "Learned React and TypeScript",
-        "Collaborated with design team",
-      ],
-    },
+    // {
+    //   type: "work",
+    //   title: "Full Stack Developer",
+    //   company: "Digital Solutions Ltd.",
+    //   period: "2020 - 2022",
+    //   description: "Developed and maintained multiple client projects, focusing on responsive design and scalable backend systems.",
+    //   achievements: [
+    //     "Delivered 15+ successful projects",
+    //     "Reduced load time by 50%",
+    //     "Implemented authentication system",
+    //   ],
+    // },
+    // {
+    //   type: "education",
+    //   title: "Bachelor of Computer Science",
+    //   company: "University of Technology",
+    //   period: "2016 - 2020",
+    //   description: "Graduated with honors. Focused on software engineering, web development, and database management.",
+    //   achievements: [
+    //     "GPA: 3.8/4.0",
+    //     "President of Coding Club",
+    //     "Best Capstone Project Award",
+    //   ],
+    // },
+    // {
+    //   type: "work",
+    //   title: "Frontend Developer Intern",
+    //   company: "StartUp Ventures",
+    //   period: "2019 - 2020",
+    //   description: "Assisted in building responsive web applications and learned modern development practices.",
+    //   achievements: [
+    //     "Built 5+ landing pages",
+    //     "Learned React and TypeScript",
+    //     "Collaborated with design team",
+    //   ],
+    // },
   ];
 
   return (
@@ -99,8 +99,8 @@ const Experience = () => {
                       <h3 className="text-xl font-bold font-heading mb-1">{exp.title}</h3>
                       <p className="text-primary font-medium">{exp.company}</p>
                     </div>
-                    <p className="text-muted-foreground mb-4">{exp.description}</p>
-                    <ul className="space-y-2">
+                    {/* <p className="text-muted-foreground mb-4">{exp.description}</p> */}
+                    {/* <ul className="space-y-2">
                       {exp.achievements.map((achievement, achievementIndex) => (
                         <li
                           key={achievementIndex}
@@ -110,7 +110,7 @@ const Experience = () => {
                           {achievement}
                         </li>
                       ))}
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
               </div>

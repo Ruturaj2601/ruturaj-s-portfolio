@@ -25,7 +25,7 @@ const About = () => {
 
           <div className="space-y-6">
             <h3 className="text-3xl font-bold font-heading">
-              Hi, I'm <span className="text-gradient">Your Name</span>
+              Hi, I'm <span className="text-gradient">Ruturaj Patil</span>
             </h3>
             <p className="text-muted-foreground leading-relaxed">
               I'm a passionate Full Stack Developer with a keen eye for design and a love for creating

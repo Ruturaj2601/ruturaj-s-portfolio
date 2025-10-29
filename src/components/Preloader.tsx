@@ -18,7 +18,7 @@ const Preloader = () => {
       <div className="text-center">
         <div className="relative mb-8">
           <div className="text-8xl font-bold font-heading text-gradient animate-pulse">
-            YN
+            Welcome to Ruturaj's Space
           </div>
           <div className="absolute inset-0 text-8xl font-bold font-heading text-gradient blur-xl opacity-50 animate-glow" />
         </div>

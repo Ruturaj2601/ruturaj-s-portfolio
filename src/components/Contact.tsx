@@ -35,19 +35,20 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com",
+      value: "patilruturaj2601@gmail.com",
+      href: "mailto:your.patilruturaj2601@gmail.com",
     },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
-    },
+   {
+  icon: Phone,
+  label: "Phone",
+  value: "+91 73043 08801",
+  href: "tel:+917304308801",
+},
+
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Mumbai, Maharashtra",
       href: "#",
     },
   ];
@@ -86,7 +87,7 @@ const Contact = () => {
               </a>
             ))}
 
-            <div className="glass-effect p-6 rounded-2xl">
+            {/* <div className="glass-effect p-6 rounded-2xl">
               <h4 className="font-bold font-heading mb-4">Follow Me</h4>
               <div className="flex gap-3">
                 {["Github", "LinkedIn", "Twitter", "Instagram"].map((social) => (
@@ -99,7 +100,7 @@ const Contact = () => {
                   </a>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact Form */}
@@ -115,7 +116,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  placeholder="John Doe"
+                  placeholder="Enter your name"
                   className="bg-background/50"
                 />
               </div>
@@ -130,7 +131,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  placeholder="john@example.com"
+                  placeholder="@example.com"
                   className="bg-background/50"
                 />
               </div>

@@ -23,6 +23,8 @@ const Hero = () => {
     document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const resumePath = "/Ruturaj_Patil_Resume.pdf"; // ✅ Path to your resume in the public folder
+
   return (
     <section
       id="home"
@@ -39,7 +41,10 @@ const Hero = () => {
       {/* Animated Background Shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
+        <div
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float"
+          style={{ animationDelay: "2s" }}
+        />
       </div>
 
       {/* Content */}
@@ -48,36 +53,45 @@ const Hero = () => {
           <div className="mb-6 animate-fade-in">
             <p className="text-lg text-muted-foreground mb-2">👋 Hello, I'm</p>
             <h1 className="text-5xl md:text-7xl font-bold font-heading mb-4">
-              <span className="text-gradient glow-text">Your Name</span>
+              <span className="text-gradient glow-text">Ruturaj Patil</span>
             </h1>
           </div>
 
-          <div className="mb-8 h-16 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <div
+            className="mb-8 h-16 animate-fade-in"
+            style={{ animationDelay: "0.2s" }}
+          >
             <h2 className="text-2xl md:text-4xl font-heading text-foreground">
-              <span className="text-primary">{"<"}</span>
-              {" "}
+              <span className="text-primary">{"<"}</span>{" "}
               <span className="inline-block min-w-[300px] text-left">
                 {roles[currentRole]}
-              </span>
-              {" "}
+              </span>{" "}
               <span className="text-primary">{"/>"}</span>
             </h2>
           </div>
 
-          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.4s" }}>
-            Passionate about crafting exceptional digital experiences with clean code and beautiful design.
-            Transforming ideas into reality, one line at a time.
+          <p
+            className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in"
+            style={{ animationDelay: "0.4s" }}
+          >
+            Passionate about crafting exceptional digital experiences with clean
+            code and beautiful design. Transforming ideas into reality, one line
+            at a time.
           </p>
 
-          <div className="flex flex-wrap gap-4 justify-center mb-12 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-            <Button
-              size="lg"
-              className="group relative overflow-hidden"
-            >
-              <Download className="mr-2 h-5 w-5" />
-              Download Resume
-              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-20 transition-opacity" />
-            </Button>
+          {/* ✅ Resume + Contact Buttons */}
+          <div
+            className="flex flex-wrap gap-4 justify-center mb-12 animate-fade-in"
+            style={{ animationDelay: "0.6s" }}
+          >
+            <a href={resumePath} download>
+              <Button size="lg" className="group relative overflow-hidden">
+                <Download className="mr-2 h-5 w-5" />
+                Download Resume
+                <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-20 transition-opacity" />
+              </Button>
+            </a>
+
             <Button
               size="lg"
               variant="outline"
@@ -89,11 +103,15 @@ const Hero = () => {
             </Button>
           </div>
 
-          <div className="flex gap-4 justify-center animate-fade-in" style={{ animationDelay: "0.8s" }}>
+          {/* Social Icons */}
+          <div
+            className="flex gap-4 justify-center animate-fade-in"
+            style={{ animationDelay: "0.8s" }}
+          >
             {[
-              { icon: Github, href: "https://github.com" },
-              { icon: Linkedin, href: "https://linkedin.com" },
-              { icon: Mail, href: "mailto:your.email@example.com" },
+              { icon: Github, href: "https://github.com/Ruturaj2601" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/ruturaj-patil-85119522b/" },
+              { icon: Mail, href: "mailto:patilruturaj2601@gmail.com" },
             ].map(({ icon: Icon, href }, index) => (
               <a
                 key={index}
